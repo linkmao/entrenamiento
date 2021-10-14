@@ -202,3 +202,15 @@ return respuesta
 
 
 console.log(login('aberracion','demonio'))
+
+ const dado=(n)=>{
+   if(n>6){
+     console.log('Este numero no esta en el rango del dado')
+   }else{
+     console.log('Este numero pertenece al dado')
+   }
+ }
+
+ dado(6)
+
+ 
