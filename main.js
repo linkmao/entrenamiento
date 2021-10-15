@@ -213,4 +213,51 @@ console.log(login('aberracion','demonio'))
 
  dado(6)
 
+
+
+const revisar =(nombre1, nombre2)=>{
+
+ if (nombre1!='ramon' || nombre2=='Mariangel'){
+  console.log('con esas condiciones EL RETO ES CAER  aquí')
+  } else{
+  console.log('con esas condiciones SI caigo aqui')
+  }
+
+}
+
+revisar('ramoncito','Estefania')
  
+// Este fragmento se debe ejecutar en la consola de chrome
+
+
+let rsp=''
+do{
+  rsp=prompt('Favor ingresar salida para terminar','salida')
+}while(rsp!='salida')
+
+
+
+let numerito=prompt('Favor ingresar un numero del 1 al 6')
+
+switch(numerito){
+    case '1':
+    alert('El numero ingresado es el numero 1')
+    break
+    case '2':
+    alert('El numero ingresado es el numero 2')
+    break
+    case '3':
+    alert('El numero ingresado es el numero 3')
+    break
+    case '4':
+    alert('El numero ingresado es el numero 4')
+    case '5':
+    alert('El numero ingresado es el numero 5')
+    break
+    case '6':
+    alert('El numero ingresado es el numero 6')
+    break
+    default:
+    document.write('Ese nuemero no existe')
+}
+
