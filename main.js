@@ -1,17 +1,17 @@
-//     const a=15
-//     const b=22
-//     const c=a+b
+//     const a=15   // tipo numerico
+//     const b=22   // tipo numérico
+//     const c=a+b   
 //     console.log ('el resultado de la suma es: ' )
-//     const duda=true 
+//     const duda=true   // tipo booleno 
 //     console.log (duda)
-//     const respuesta="esta es una respuesta"
+//     const respuesta="esta es una respuesta"   // Tipo string
 //     console.log (respuesta)
 //     console.log(typeof(duda))
-//     const arreglo=[1,3,7,true,"hola",8]
+//     const arreglo=[1,3,7,true,"hola",8]   // Tipo Array
 //     console.log(arreglo)
 //     console.log (typeof (arreglo))
 //     console.log (arreglo[3])
-//     const objeto={nombre:'ramon',apellido:'Rua',edad:36,casado:true}
+//     const objeto={nombre:'ramon',apellido:'Rua',edad:36,casado:true} // Tipo JSON
 //     console.log(objeto)
 //     console.log(objeto.edad)
 //     const informacion = [
@@ -174,90 +174,165 @@ true or false --> true
 false or true --> true
 false or false --> false
 */
-espacio()
-console.log (7===7 || 'hola'!=='hola')
+// espacio()
+// console.log (7===7 || 'hola'!=='hola')
 
 
-console.log('bebe'==='bb' && 2<5 || 32!==32)
+// console.log('bebe'==='bb' && 2<5 || 32!==32)
 
-//for (i=1;i<=100;i++){
-//  console.log (i)
-//}
+// //for (i=1;i<=100;i++){
+// //  console.log (i)
+// //}
 
-const login=(username,password)=>{
-  const usuario="aberracion"
-  const clave="demonio"
-  let respuesta=""
+// const login=(username,password)=>{
+//   const usuario="aberracion"
+//   const clave="demonio"
+//   let respuesta=""
 
-if (username===usuario && password===clave){
-  // console.log('Bienvenido al infierno querido.')
-  respuesta= 'Bienvenidos al infierno'
-}else {
-respuesta='No se aceptan pendejos'
-  // console.log('No se acepta pendejos aquí')}
-}
-return respuesta
+// if (username===usuario && password===clave){
+//   // console.log('Bienvenido al infierno querido.')
+//   respuesta= 'Bienvenidos al infierno'
+// }else {
+// respuesta='No se aceptan pendejos'
+//   // console.log('No se acepta pendejos aquí')}
+// }
+// return respuesta
 
-}
-
-
-console.log(login('aberracion','demonio'))
-
- const dado=(n)=>{
-   if(n>6){
-     console.log('Este numero no esta en el rango del dado')
-   }else{
-     console.log('Este numero pertenece al dado')
-   }
- }
-
- dado(6)
+// }
 
 
+// console.log(login('aberracion','demonio'))
 
-const revisar =(nombre1, nombre2)=>{
+//  const dado=(n)=>{
+//    if(n>6){
+//      console.log('Este numero no esta en el rango del dado')
+//    }else{
+//      console.log('Este numero pertenece al dado')
+//    }
+//  }
 
- if (nombre1!='ramon' || nombre2=='Mariangel'){
-  console.log('con esas condiciones EL RETO ES CAER  aquí')
-  } else{
-  console.log('con esas condiciones SI caigo aqui')
-  }
+//  dado(6)
 
-}
 
-revisar('ramoncito','Estefania')
+
+// const revisar =(nombre1, nombre2)=>{
+
+//  if (nombre1!='ramon' || nombre2=='Mariangel'){
+//   console.log('con esas condiciones EL RETO ES CAER  aquí')
+//   } else{
+//   console.log('con esas condiciones SI caigo aqui')
+//   }
+
+// }
+
+// revisar('ramoncito','Estefania')
  
-// Este fragmento se debe ejecutar en la consola de chrome
+// // Este fragmento se debe ejecutar en la consola de chrome
 
 
-let rsp=''
-do{
-  rsp=prompt('Favor ingresar salida para terminar','salida')
-}while(rsp!='salida')
+// let rsp=''
+// do{
+//   rsp=prompt('Favor ingresar salida para terminar','salida')
+// }while(rsp!='salida')
 
 
 
-let numerito=prompt('Favor ingresar un numero del 1 al 6')
+// let numerito=prompt('Favor ingresar un numero del 1 al 6')
 
-switch(numerito){
-    case '1':
-    alert('El numero ingresado es el numero 1')
-    break
-    case '2':
-    alert('El numero ingresado es el numero 2')
-    break
-    case '3':
-    alert('El numero ingresado es el numero 3')
-    break
-    case '4':
-    alert('El numero ingresado es el numero 4')
-    case '5':
-    alert('El numero ingresado es el numero 5')
-    break
-    case '6':
-    alert('El numero ingresado es el numero 6')
-    break
-    default:
-    document.write('Ese nuemero no existe')
-}
+// switch(numerito){
+//     case '1':
+//     alert('El numero ingresado es el numero 1')
+//     break
+//     case '2':
+//     alert('El numero ingresado es el numero 2')
+//     break
+//     case '3':
+//     alert('El numero ingresado es el numero 3')
+//     break
+//     case '4':
+//     alert('El numero ingresado es el numero 4')
+//     case '5':
+//     alert('El numero ingresado es el numero 5')
+//     break
+//     case '6':
+//     alert('El numero ingresado es el numero 6')
+//     break
+//     default:
+//     document.write('Ese nuemero no existe')
+// }
 
+//¨***************************************************************
+// Código del 19 de octubre 2021---- MANIPULACION DE ARRAYS------
+//******************************************************************* *
+
+const dias = ["Lunes", "martes", 'miercoles',
+ 'jueves','Viernes']
+ 
+ //length entrega la cantidad de elementos de un array.
+let longitud=dias.length
+console.log (longitud)
+console.log(dias[longitud-1])
+
+
+// Push agrega un elemento al final del array
+dias.push('Sabado')
+longitud=dias.length
+console.log (longitud)
+console.log(dias[longitud-1])
+
+// El metodo POP elimina el ultimo elemento del array
+dias.push('Domingo','Jupiter')
+console.log(dias)
+dias.pop()
+console.log(dias)
+
+// El metodo unshift agrega un elmento al inicio del array
+dias.unshift('Dias de la semana')
+console.log(dias)
+
+// El metodo shif elimina el primer elemento del array
+dias.unshift('Elemento a borrar')
+console.log(dias)
+dias.shift()
+console.log(dias)
+
+
+// El metodo splice elimina elementos desde la pocision indicada y las cantidades
+// apartir de su pocision inicial
+const meses =['enero', 'febrero', 'marzo', 'marte', 'jupiter', 'abril']
+console.log(meses)
+meses.splice(3,2)
+console.log(meses)
+
+
+
+//  El metodos splice ademas de borrar elementos en un array tiene la opcion de 
+// guardar los elementos en otro array
+let familia=['Javier R', 'Mery F', 'Mauricio R', 'Diego R', 'Ramon R',
+ 'Mariangel R', 'Estefania R','Andrea C', 'Camila G']
+console.log(familia)
+
+let pos=7, elementos=2
+
+let elementosborrados=familia.splice(pos,elementos)
+console.log(familia)
+console.log(elementosborrados)
+
+
+//El metodo slice hace una copia exacta del array en otro array.
+let otrafamilia=elementosborrados.slice()
+console.log(otrafamilia)
+
+// El metodo concat une des array en uno solo.
+let papas=['Ramon','Mauricio']
+let hijas=['Estefania', 'Mariangel']
+
+let union=hijas.concat(papas)
+console.log(union)
+
+
+//  forEach itera sobre todos lo elementos del array, recibe como parameto una
+// funcion para la manipulacion del dato.
+familia.forEach(elemento=>console.log(elemento))
+let unoalcinco=[1,2,3,4,5]
+unoalcinco.forEach(elemento=>console.log(elemento*3))
